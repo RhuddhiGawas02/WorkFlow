@@ -1,0 +1,20 @@
+name: dotnet package
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup dotnet 
+        uses: actions/setup-dotnet@v2
+      - name: version
+        run: dotnet --version
+      - name: Install dependencies
+        run: dotnet restore AzureFunctionHttp
+      - name: Build
+        run: dotnet build AzureFunctionHttp
+    
+ 
+ 
