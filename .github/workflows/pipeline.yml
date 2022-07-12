@@ -12,4 +12,5 @@ jobs:
         echo "Restore Successfully"
         dotnet build AzureFunctionHttp
         echo "Build Successfully"
+        echo "..."
         
