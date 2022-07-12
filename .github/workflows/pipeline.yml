@@ -14,3 +14,4 @@ jobs:
         dotnet build AzureFunctionHttp
         echo "Build Successfully"
         
+
