@@ -5,4 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: echo "Hello"
-    - run: dotnet --version
+    - run: | 
+        dotnet --version
+        dotnet build --configuration Release HelloWorld
+        echo "Build Successfully"
+        
