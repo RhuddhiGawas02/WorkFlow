@@ -1,4 +1,4 @@
-name: learn-github-actions
+name: pipeline
 on: [push]
 jobs:
   build-pipeline:
@@ -8,6 +8,6 @@ jobs:
     - run: | 
         dotnet --version
         dotnet restore
-        dotnet build --configuration Release HelloWorld
+        dotnet build --configuration Release AzureFunctionHttp
         echo "Build Successfully"
         
