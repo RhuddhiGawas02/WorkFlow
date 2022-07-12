@@ -9,6 +9,6 @@ jobs:
         dotnet --version
         dotnet restore AzureFunctionHttp
         echo "Restore Successfully"
-        dotnet build --configuration Release AzureFunctionHttp
+        dotnet build AzureFunctionHttp
         echo "Build Successfully"
         
