@@ -7,8 +7,9 @@ jobs:
     - run: echo "Hello"
     - run: | 
         dotnet --version
-        dotnet restore https://github.com/RhuddhiGawas02/WorkFlow/tree/main/AzureFunctionHttp
+        echo "above restore"
+        dotnet restore AzureFunctionHttp
         echo "Restore Successfully"
-        dotnet build https://github.com/RhuddhiGawas02/WorkFlow/tree/main/AzureFunctionHttp
+        dotnet build AzureFunctionHttp
         echo "Build Successfully"
         
