@@ -9,11 +9,12 @@ jobs:
       - uses: actions/checkout@v3
       - name: Setup dotnet
         uses: actions/setup-dotnet@v2
+      - name: version
+        run: dotnet -version
       - name: Install dependencies
         run: dotnet restore
       - name: Build
         run: dotnet build
-      - name: Test with the dotnet CLI
-        run: dotnet test       
+    
  
  
