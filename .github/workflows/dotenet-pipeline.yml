@@ -1,4 +1,4 @@
-name: dotnet-pipeline
+name: dotnet package
 
 on: [push]
 
@@ -15,7 +15,3 @@ jobs:
         run: dotnet restore AzureFunctionHttp
       - name: Build
         run: dotnet build AzureFunctionHttp
-            echo "Build Successfully"
-    
- 
- 
