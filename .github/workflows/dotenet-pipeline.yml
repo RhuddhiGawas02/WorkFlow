@@ -15,6 +15,7 @@ jobs:
         run: dotnet restore AzureFunctionHttp
       - name: Build
         run: dotnet build AzureFunctionHttp
+            echo "Build Successfully"
     
  
  
